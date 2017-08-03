@@ -19,6 +19,12 @@ class TimeAgo extends Widget {
     public $text = '';
     public $options = [];
 
+    public function init()
+    {
+        TimeAgoAsset::register($this->getView());
+    }
+
+
     public function run() {
         if ($this->dateTime == null) {
             $this->dateTime = time();
