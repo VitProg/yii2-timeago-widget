@@ -11,7 +11,7 @@ namespace vitprog\timeago;
 
 class TimeAgoAsset extends \yii\web\AssetBundle
 {
-    public $sourcePath = 'assets';
+    public $sourcePath = __DIR__.'\assets';
     public $js = ['timeago.js'];
     public $depends = [
         'yii\web\JqueryAsset'
